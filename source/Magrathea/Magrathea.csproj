@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\RepositoryXmlSerialization.cs" />
+    <Compile Include="DomainEvents\DomainEventManager.cs" />
+    <Compile Include="DomainEvents\IDomainEvent.cs" />
+    <Compile Include="DomainEvents\IDomainEventHandler.cs" />
     <Compile Include="Serialization\ObjectSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
