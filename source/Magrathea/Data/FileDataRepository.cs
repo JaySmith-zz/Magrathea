@@ -45,11 +45,15 @@ namespace Magrathea.Data
         /// <param name="data">instance of object of type T that contains data to be written to disk</param>
         public void Save<T>(T data)
         {
-            using (var file = File.CreateText(_filename))
-            {
-                var serializer = new JsonSerializer();
-                serializer.Serialize(file, data);
-            }
+            JsonSerializerSettings serializerSettings = new JsonSerializerSettings();
+            string contents = JsonConvert.SerializeObject(data, (Formatting)1);
+            File.WriteAllText(_filename, contents);
+
+            //using (var file = File.CreateText(_filename))
+            //{
+            //    var serializer = new JsonSerializer();
+            //    serializer.Serialize(file, data);
+            //}
         }
 
         public void Delete()
