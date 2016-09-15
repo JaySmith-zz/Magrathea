@@ -1,4 +1,6 @@
-﻿namespace Magrathea.Data
+﻿using System.Data.Entity;
+
+namespace Magrathea.Data.Interfaces
 {
     /// <summary>
     ///     An Interface for Scalar Queries that return a single value or object
@@ -11,6 +13,6 @@
         /// </summary>
         /// <param name="context">The data context that the scalar query is executed against</param>
         /// <returns>The instance of <typeparamref name="T" /> that the query materialized if any</returns>
-        T Execute(IDataContext context);
+        T Execute(DbContext context);
     }
 }

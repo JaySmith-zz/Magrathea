@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Magrathea.Data
+namespace Magrathea.Data.Interfaces
 {
     /// <summary>
     ///     The standard interface used to interact with an ORM specific implementation

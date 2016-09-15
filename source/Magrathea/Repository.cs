@@ -1,17 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Threading.Tasks;
+using Magrathea.Data.Interfaces;
 
 namespace Magrathea.Data
 {
     public class Repository
     {
-        private readonly IDataContext _context;
+        private readonly DbContext _context;
 
         /// <summary>
         ///     Creates a Repository that uses the context provided
         /// </summary>
         /// <param name="context">The data context that this repository uses</param>
-        public Repository(IDataContext context)
+        public Repository(DbContext context)
         {
             _context = context;
         }
@@ -102,7 +104,8 @@ namespace Magrathea.Data
         /// <typeparam name="T">The Entity being queried</typeparam>
         /// <param name="query">The prebuilt Query Object</param>
         /// <returns>The task that will return <see cref="IEnumerable{T}" /> from the query</returns>
-        public virtual Task<IEnumerable<IProjection>> FindAsync<TSelection, IProjection>(IQuery<TSelection, IProjection> query)
+        public virtual Task<IEnumerable<IProjection>> FindAsync<TSelection, IProjection>(
+            IQuery<TSelection, IProjection> query)
             where TSelection : class
         {
             var task = new Task<IEnumerable<IProjection>>(() => query.Execute(_context));

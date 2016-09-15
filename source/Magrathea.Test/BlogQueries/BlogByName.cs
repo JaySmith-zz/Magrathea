@@ -1,21 +1,12 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Magrathea.Data;
 
-namespace NUnit.Tests
+namespace Magrathea.Test
 {
-    [TestFixture]
-    public class TestClass
-    {
-        
-        [Test]
-        
-
     public class BlogByName : Scalar<Blog>
     {
         public BlogByName(string name)
@@ -24,4 +15,5 @@ namespace NUnit.Tests
             //ContextQuery = c => c.Set<Blog>().AsQueryable().FirstOrDefault(x => x.BLOG_NAME == name); // AsQueryable<Blog>().FirstOrDefault(x => x.BLOG_NAME == name);
         }
     }
+
 }

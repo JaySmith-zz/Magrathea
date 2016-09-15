@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 
-namespace Magrathea.Data
+namespace Magrathea.Data.Interfaces
 {
     /// <summary>
     ///     The base interface that surfaces SQL output of the Query statement
@@ -17,6 +13,6 @@ namespace Magrathea.Data
         /// </summary>
         /// <param name="context">The data context that the query is evaluated and the details are generated against</param>
         /// <returns>The details of the Statement from the Query</returns>
-        string OutputQuery(IDataContext context);
+        string OutputQuery(DbContext context);
     }
 }

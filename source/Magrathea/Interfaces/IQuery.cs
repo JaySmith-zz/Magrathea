@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Magrathea.Data.Interfaces;
 
 namespace Magrathea.Data
 {
@@ -18,7 +17,7 @@ namespace Magrathea.Data
         /// </summary>
         /// <param name="context">the data context that the query should be executed against</param>
         /// <returns>The collection of <typeparamref name="T" /> that the query materialized if any</returns>
-        IEnumerable<T> Execute(IDataContext context);
+        IEnumerable<T> Execute(DbContext context);
     }
 
     /// <summary>
@@ -26,5 +25,7 @@ namespace Magrathea.Data
     /// </summary>
     /// <typeparam name="TSelection">The type being queried</typeparam>
     /// <typeparam name="TProjection">The type to be returned</typeparam>
-    public interface IQuery<out TSelection, out TProjection> : IQuery<TProjection> { }
+    public interface IQuery<out TSelection, out TProjection> : IQuery<TProjection>
+    {
+    }
 }
