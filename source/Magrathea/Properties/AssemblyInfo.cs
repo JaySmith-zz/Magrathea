@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("Magrathea")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Repository and Query Specification for Entity Framework")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Jay Smith")]
 [assembly: AssemblyProduct("Magrathea")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
