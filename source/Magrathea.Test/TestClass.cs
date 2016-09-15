@@ -3,10 +3,10 @@ using Magrathea.Data;
 
 namespace Magrathea.Test
 {
-    [TestFixture]
+    [TestFixture] 
+
     public class TestClass
     {
-        [Test]
         public void DataRepository()
         {
             var dbContext = new BlogContext();
