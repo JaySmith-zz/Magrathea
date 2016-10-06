@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Magrathea.Data.Interfaces
+namespace Magrathea.Interfaces
 {
     /// <summary>
     ///     The base interface that surfaces SQL output of the Query statement

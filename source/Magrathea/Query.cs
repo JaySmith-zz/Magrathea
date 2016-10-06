@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Magrathea.Data
+namespace Magrathea
 {
     /// <summary>
     ///     The base implementation for Queries that return collections

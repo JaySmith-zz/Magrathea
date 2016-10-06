@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Linq;
 
-namespace Magrathea.Data
+namespace Magrathea
 {
     public static class DbContextExtensions
     {

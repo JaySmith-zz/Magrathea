@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Magrathea.Data.Interfaces
+namespace Magrathea.Interfaces
 {
     /// <summary>
     ///     An Interface for Command Queries that return no value, or the return is ignored

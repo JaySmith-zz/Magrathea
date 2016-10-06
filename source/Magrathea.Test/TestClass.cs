@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using Magrathea.Data;
 
 namespace Magrathea.Test
 {
@@ -17,6 +16,21 @@ namespace Magrathea.Test
 
             var blogs = repository.Find(new BlogsByName("Jay's Blog"));
 
+        }
+
+        public void AddEntity()
+        {
+            var dbContext = new BlogContext();
+
+            var repository = new Repository(dbContext);
+
+            var blog = new Blog
+            {
+                BLOG_NAME =  "New Blog"
+            };
+
+            repository.Context.Add(blog);
+            repository.Context.Commit();
         }
 
     }

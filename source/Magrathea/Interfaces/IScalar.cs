@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Magrathea.Data.Interfaces
+namespace Magrathea.Interfaces
 {
     /// <summary>
     ///     An Interface for Scalar Queries that return a single value or object

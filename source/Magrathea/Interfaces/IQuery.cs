@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using Magrathea.Data.Interfaces;
+using Magrathea.Interfaces;
 
-namespace Magrathea.Data
+namespace Magrathea
 {
     /// <summary>
     ///     An Interface for Queries that return collections

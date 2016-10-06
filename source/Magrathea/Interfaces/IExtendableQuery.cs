@@ -1,4 +1,4 @@
-﻿namespace Magrathea.Data.Interfaces
+﻿namespace Magrathea.Interfaces
 {
     public interface IExtendableQuery
     {

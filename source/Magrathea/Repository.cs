@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Threading.Tasks;
-using Magrathea.Data.Interfaces;
+using Magrathea.Interfaces;
 
-namespace Magrathea.Data
+namespace Magrathea
 {
-    public class Repository
+    public class Repository : IRepository
     {
         private readonly DbContext _context;
 
@@ -15,6 +15,7 @@ namespace Magrathea.Data
         /// <param name="context">The data context that this repository uses</param>
         public Repository(DbContext context)
         {
+            Context = new UnitOfWork(context);
             _context = context;
         }
 
@@ -112,5 +113,10 @@ namespace Magrathea.Data
             task.Start();
             return task;
         }
+
+        /// <summary>
+        ///     Reference to the DataContext the repository is using
+        /// </summary>
+        public IUnitOfWork Context { get; }
     }
 }

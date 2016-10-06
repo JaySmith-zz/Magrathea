@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magrathea", "Magrathea\Magrathea.csproj", "{3C1D4DB4-6CCE-4C57-B912-9DBB04979A6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra", "Extra\Extra.csproj", "{C97901B4-83B4-4867-B06D-BB38F6F2C9D3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magrathea.Test", "Magrathea.Test\Magrathea.Test.csproj", "{6717AC38-45D5-48F1-97D8-970BFCEAC191}"
 EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Magrathea.nuget", "Magrathea.nuget\Magrathea.nuget.nuproj", "{1CE4F4DC-15BE-42CD-A99B-90D1A793F217}"
@@ -21,10 +19,6 @@ Global
 		{3C1D4DB4-6CCE-4C57-B912-9DBB04979A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C1D4DB4-6CCE-4C57-B912-9DBB04979A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C1D4DB4-6CCE-4C57-B912-9DBB04979A6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C97901B4-83B4-4867-B06D-BB38F6F2C9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C97901B4-83B4-4867-B06D-BB38F6F2C9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C97901B4-83B4-4867-B06D-BB38F6F2C9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C97901B4-83B4-4867-B06D-BB38F6F2C9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6717AC38-45D5-48F1-97D8-970BFCEAC191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6717AC38-45D5-48F1-97D8-970BFCEAC191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6717AC38-45D5-48F1-97D8-970BFCEAC191}.Release|Any CPU.ActiveCfg = Release|Any CPU
