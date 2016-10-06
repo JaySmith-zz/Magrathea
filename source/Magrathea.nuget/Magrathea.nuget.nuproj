@@ -19,7 +19,7 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>Magrathea</Id>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>Magrathea</Title>
     <Authors>Jay Smith</Authors>
     <Owners>Jay Smith</Owners>

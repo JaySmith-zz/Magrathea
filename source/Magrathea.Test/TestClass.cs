@@ -32,6 +32,8 @@ namespace Magrathea.Test
 
             var updatedBlog = repository.Context.Add(blog);
             repository.Context.Commit();
+
+            Assert.IsNotNull(updatedBlog.BLOG_ID);
         }
 
     }
