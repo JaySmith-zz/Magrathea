@@ -3,9 +3,9 @@
 namespace Magrathea.Test
 {
     [TestFixture] 
-
     public class TestClass
     {
+        [Test]
         public void DataRepository()
         {
             var dbContext = new BlogContext();
@@ -18,6 +18,7 @@ namespace Magrathea.Test
 
         }
 
+        [Test]
         public void AddEntity()
         {
             var dbContext = new BlogContext();
@@ -29,7 +30,7 @@ namespace Magrathea.Test
                 BLOG_NAME =  "New Blog"
             };
 
-            repository.Context.Add(blog);
+            var updatedBlog = repository.Context.Add(blog);
             repository.Context.Commit();
         }
 
