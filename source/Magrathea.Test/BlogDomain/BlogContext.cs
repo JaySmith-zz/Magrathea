@@ -1,6 +1,6 @@
 using System.Data.Entity;
 
-namespace Magrathea.Test
+namespace Magrathea.Test.BlogDomain
 {
     public partial class BlogContext : DbContext
     {

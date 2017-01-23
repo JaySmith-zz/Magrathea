@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Magrathea.Test.BlogDomain;
+using NUnit.Framework;
 
 namespace Magrathea.Test
 {
